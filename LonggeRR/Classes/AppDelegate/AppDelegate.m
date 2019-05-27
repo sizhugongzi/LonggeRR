@@ -26,6 +26,7 @@
     //显示窗口
     [self.window makeKeyAndVisible];
     
+    NSLog(@"nihao");
     return YES;
 }
 

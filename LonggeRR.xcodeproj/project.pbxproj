@@ -53,6 +53,31 @@
 		E72084F3229BD312000AA7B9 /* LGPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E72084F1229BD312000AA7B9 /* LGPublishViewController.m */; };
 		E72084FD229BD38B000AA7B9 /* LGEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E72084FC229BD38B000AA7B9 /* LGEssenceViewController.m */; };
 		E7208500229BD3C4000AA7B9 /* LGNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E72084FF229BD3C4000AA7B9 /* LGNewViewController.m */; };
+		E7208503229BD866000AA7B9 /* LGSubTagTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7208501229BD866000AA7B9 /* LGSubTagTableViewController.m */; };
+		E7208506229BD871000AA7B9 /* LGSubTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E7208505229BD871000AA7B9 /* LGSubTagItem.m */; };
+		E720850A229BD881000AA7B9 /* LGSubTagTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7208507229BD881000AA7B9 /* LGSubTagTableViewCell.xib */; };
+		E720850B229BD881000AA7B9 /* LGSubTagTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E7208508229BD881000AA7B9 /* LGSubTagTableViewCell.m */; };
+		E720850E229BD9D8000AA7B9 /* LGTopicViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E720850C229BD9D8000AA7B9 /* LGTopicViewModel.m */; };
+		E720857A229BDAC3000AA7B9 /* LGVideoTopicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7208566229BDAC1000AA7B9 /* LGVideoTopicView.xib */; };
+		E720857B229BDAC3000AA7B9 /* LGVoiceTopicView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7208567229BDAC1000AA7B9 /* LGVoiceTopicView.m */; };
+		E720857C229BDAC3000AA7B9 /* LGTopTopicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7208568229BDAC1000AA7B9 /* LGTopTopicView.xib */; };
+		E720857D229BDAC3000AA7B9 /* LGVideoTopicView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7208569229BDAC1000AA7B9 /* LGVideoTopicView.m */; };
+		E720857E229BDAC3000AA7B9 /* LGBaseTopicView.m in Sources */ = {isa = PBXBuildFile; fileRef = E720856C229BDAC1000AA7B9 /* LGBaseTopicView.m */; };
+		E720857F229BDAC3000AA7B9 /* LGCommentTopicView.m in Sources */ = {isa = PBXBuildFile; fileRef = E720856D229BDAC1000AA7B9 /* LGCommentTopicView.m */; };
+		E7208580229BDAC3000AA7B9 /* LGBottomTopicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E720856E229BDAC2000AA7B9 /* LGBottomTopicView.xib */; };
+		E7208581229BDAC3000AA7B9 /* LGCommentTopicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E720856F229BDAC2000AA7B9 /* LGCommentTopicView.xib */; };
+		E7208582229BDAC3000AA7B9 /* LGPictureTopicView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7208570229BDAC2000AA7B9 /* LGPictureTopicView.m */; };
+		E7208583229BDAC3000AA7B9 /* LGPictureTopicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7208573229BDAC2000AA7B9 /* LGPictureTopicView.xib */; };
+		E7208584229BDAC3000AA7B9 /* LGBottomTopicView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7208574229BDAC2000AA7B9 /* LGBottomTopicView.m */; };
+		E7208585229BDAC3000AA7B9 /* LGVoiceTopicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7208576229BDAC2000AA7B9 /* LGVoiceTopicView.xib */; };
+		E7208586229BDAC3000AA7B9 /* LGTopTopicView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7208578229BDAC3000AA7B9 /* LGTopTopicView.m */; };
+		E7208589229BDAE4000AA7B9 /* LGTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E7208588229BDAE4000AA7B9 /* LGTopicCell.m */; };
+		E720858D229BDB03000AA7B9 /* LGBaseTopicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E720858C229BDB03000AA7B9 /* LGBaseTopicTableViewController.m */; };
+		E7208591229BDB0E000AA7B9 /* LGSeeBigPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E720858E229BDB0D000AA7B9 /* LGSeeBigPictureViewController.xib */; };
+		E7208592229BDB0E000AA7B9 /* LGSeeBigPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E720858F229BDB0D000AA7B9 /* LGSeeBigPictureViewController.m */; };
+		E7208599229BDB25000AA7B9 /* LGCommentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E7208594229BDB25000AA7B9 /* LGCommentItem.m */; };
+		E720859A229BDB25000AA7B9 /* LGTopicItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E7208596229BDB25000AA7B9 /* LGTopicItem.m */; };
+		E720859B229BDB25000AA7B9 /* LGUserItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E7208597229BDB25000AA7B9 /* LGUserItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -139,6 +164,48 @@
 		E72084FC229BD38B000AA7B9 /* LGEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGEssenceViewController.m; sourceTree = "<group>"; };
 		E72084FE229BD3C3000AA7B9 /* LGNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGNewViewController.h; sourceTree = "<group>"; };
 		E72084FF229BD3C4000AA7B9 /* LGNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGNewViewController.m; sourceTree = "<group>"; };
+		E7208501229BD866000AA7B9 /* LGSubTagTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSubTagTableViewController.m; sourceTree = "<group>"; };
+		E7208502229BD866000AA7B9 /* LGSubTagTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSubTagTableViewController.h; sourceTree = "<group>"; };
+		E7208504229BD871000AA7B9 /* LGSubTagItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSubTagItem.h; sourceTree = "<group>"; };
+		E7208505229BD871000AA7B9 /* LGSubTagItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSubTagItem.m; sourceTree = "<group>"; };
+		E7208507229BD881000AA7B9 /* LGSubTagTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGSubTagTableViewCell.xib; sourceTree = "<group>"; };
+		E7208508229BD881000AA7B9 /* LGSubTagTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSubTagTableViewCell.m; sourceTree = "<group>"; };
+		E7208509229BD881000AA7B9 /* LGSubTagTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSubTagTableViewCell.h; sourceTree = "<group>"; };
+		E720850C229BD9D8000AA7B9 /* LGTopicViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGTopicViewModel.m; sourceTree = "<group>"; };
+		E720850D229BD9D8000AA7B9 /* LGTopicViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGTopicViewModel.h; sourceTree = "<group>"; };
+		E7208566229BDAC1000AA7B9 /* LGVideoTopicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGVideoTopicView.xib; sourceTree = "<group>"; };
+		E7208567229BDAC1000AA7B9 /* LGVoiceTopicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGVoiceTopicView.m; sourceTree = "<group>"; };
+		E7208568229BDAC1000AA7B9 /* LGTopTopicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGTopTopicView.xib; sourceTree = "<group>"; };
+		E7208569229BDAC1000AA7B9 /* LGVideoTopicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGVideoTopicView.m; sourceTree = "<group>"; };
+		E720856A229BDAC1000AA7B9 /* LGBaseTopicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGBaseTopicView.h; sourceTree = "<group>"; };
+		E720856B229BDAC1000AA7B9 /* LGVideoTopicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGVideoTopicView.h; sourceTree = "<group>"; };
+		E720856C229BDAC1000AA7B9 /* LGBaseTopicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGBaseTopicView.m; sourceTree = "<group>"; };
+		E720856D229BDAC1000AA7B9 /* LGCommentTopicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGCommentTopicView.m; sourceTree = "<group>"; };
+		E720856E229BDAC2000AA7B9 /* LGBottomTopicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGBottomTopicView.xib; sourceTree = "<group>"; };
+		E720856F229BDAC2000AA7B9 /* LGCommentTopicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGCommentTopicView.xib; sourceTree = "<group>"; };
+		E7208570229BDAC2000AA7B9 /* LGPictureTopicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGPictureTopicView.m; sourceTree = "<group>"; };
+		E7208571229BDAC2000AA7B9 /* LGCommentTopicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGCommentTopicView.h; sourceTree = "<group>"; };
+		E7208572229BDAC2000AA7B9 /* LGTopTopicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGTopTopicView.h; sourceTree = "<group>"; };
+		E7208573229BDAC2000AA7B9 /* LGPictureTopicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGPictureTopicView.xib; sourceTree = "<group>"; };
+		E7208574229BDAC2000AA7B9 /* LGBottomTopicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGBottomTopicView.m; sourceTree = "<group>"; };
+		E7208575229BDAC2000AA7B9 /* LGVoiceTopicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGVoiceTopicView.h; sourceTree = "<group>"; };
+		E7208576229BDAC2000AA7B9 /* LGVoiceTopicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGVoiceTopicView.xib; sourceTree = "<group>"; };
+		E7208577229BDAC3000AA7B9 /* LGBottomTopicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGBottomTopicView.h; sourceTree = "<group>"; };
+		E7208578229BDAC3000AA7B9 /* LGTopTopicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGTopTopicView.m; sourceTree = "<group>"; };
+		E7208579229BDAC3000AA7B9 /* LGPictureTopicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGPictureTopicView.h; sourceTree = "<group>"; };
+		E7208587229BDAE4000AA7B9 /* LGTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGTopicCell.h; sourceTree = "<group>"; };
+		E7208588229BDAE4000AA7B9 /* LGTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGTopicCell.m; sourceTree = "<group>"; };
+		E720858B229BDB03000AA7B9 /* LGBaseTopicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGBaseTopicTableViewController.h; sourceTree = "<group>"; };
+		E720858C229BDB03000AA7B9 /* LGBaseTopicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGBaseTopicTableViewController.m; sourceTree = "<group>"; };
+		E720858E229BDB0D000AA7B9 /* LGSeeBigPictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGSeeBigPictureViewController.xib; sourceTree = "<group>"; };
+		E720858F229BDB0D000AA7B9 /* LGSeeBigPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSeeBigPictureViewController.m; sourceTree = "<group>"; };
+		E7208590229BDB0E000AA7B9 /* LGSeeBigPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSeeBigPictureViewController.h; sourceTree = "<group>"; };
+		E7208593229BDB24000AA7B9 /* LGCommentItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGCommentItem.h; sourceTree = "<group>"; };
+		E7208594229BDB25000AA7B9 /* LGCommentItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGCommentItem.m; sourceTree = "<group>"; };
+		E7208595229BDB25000AA7B9 /* LGTopicItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGTopicItem.h; sourceTree = "<group>"; };
+		E7208596229BDB25000AA7B9 /* LGTopicItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGTopicItem.m; sourceTree = "<group>"; };
+		E7208597229BDB25000AA7B9 /* LGUserItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGUserItem.m; sourceTree = "<group>"; };
+		E7208598229BDB25000AA7B9 /* LGUserItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGUserItem.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,16 +271,16 @@
 		E7208471229BCFBC000AA7B9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				E7208486229BD0C7000AA7B9 /* Setting */,
 				E7208485229BD0BF000AA7B9 /* Util */,
-				E7208484229BD0B7000AA7B9 /* Other */,
-				E7208483229BD0B0000AA7B9 /* Me */,
-				E7208482229BD0A1000AA7B9 /* FriendThread */,
-				E7208481229BD099000AA7B9 /* Publish */,
-				E7208480229BD092000AA7B9 /* New */,
-				E720847F229BD087000AA7B9 /* Essence */,
-				E7208473229BD011000AA7B9 /* Main */,
 				E7208472229BCFD9000AA7B9 /* AppDelegate */,
+				E7208473229BD011000AA7B9 /* Main */,
+				E720847F229BD087000AA7B9 /* Essence */,
+				E7208480229BD092000AA7B9 /* New */,
+				E7208481229BD099000AA7B9 /* Publish */,
+				E7208482229BD0A1000AA7B9 /* FriendThread */,
+				E7208483229BD0B0000AA7B9 /* Me */,
+				E7208486229BD0C7000AA7B9 /* Setting */,
+				E7208484229BD0B7000AA7B9 /* Other */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -482,6 +549,8 @@
 			children = (
 				E72084FE229BD3C3000AA7B9 /* LGNewViewController.h */,
 				E72084FF229BD3C4000AA7B9 /* LGNewViewController.m */,
+				E7208502229BD866000AA7B9 /* LGSubTagTableViewController.h */,
+				E7208501229BD866000AA7B9 /* LGSubTagTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -489,8 +558,12 @@
 		E72084F5229BD337000AA7B9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E720858A229BDAF2000AA7B9 /* ChildViewController */,
 				E72084FB229BD38B000AA7B9 /* LGEssenceViewController.h */,
 				E72084FC229BD38B000AA7B9 /* LGEssenceViewController.m */,
+				E7208590229BDB0E000AA7B9 /* LGSeeBigPictureViewController.h */,
+				E720858F229BDB0D000AA7B9 /* LGSeeBigPictureViewController.m */,
+				E720858E229BDB0D000AA7B9 /* LGSeeBigPictureViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -498,6 +571,12 @@
 		E72084F6229BD33E000AA7B9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E7208593229BDB24000AA7B9 /* LGCommentItem.h */,
+				E7208594229BDB25000AA7B9 /* LGCommentItem.m */,
+				E7208595229BDB25000AA7B9 /* LGTopicItem.h */,
+				E7208596229BDB25000AA7B9 /* LGTopicItem.m */,
+				E7208598229BDB25000AA7B9 /* LGUserItem.h */,
+				E7208597229BDB25000AA7B9 /* LGUserItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -505,6 +584,9 @@
 		E72084F7229BD343000AA7B9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E720850F229BD9E7000AA7B9 /* CellChildView */,
+				E7208587229BDAE4000AA7B9 /* LGTopicCell.h */,
+				E7208588229BDAE4000AA7B9 /* LGTopicCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -512,6 +594,9 @@
 		E72084F8229BD347000AA7B9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E7208509229BD881000AA7B9 /* LGSubTagTableViewCell.h */,
+				E7208508229BD881000AA7B9 /* LGSubTagTableViewCell.m */,
+				E7208507229BD881000AA7B9 /* LGSubTagTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -519,6 +604,8 @@
 		E72084F9229BD367000AA7B9 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				E720850D229BD9D8000AA7B9 /* LGTopicViewModel.h */,
+				E720850C229BD9D8000AA7B9 /* LGTopicViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -526,8 +613,46 @@
 		E72084FA229BD378000AA7B9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E7208504229BD871000AA7B9 /* LGSubTagItem.h */,
+				E7208505229BD871000AA7B9 /* LGSubTagItem.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E720850F229BD9E7000AA7B9 /* CellChildView */ = {
+			isa = PBXGroup;
+			children = (
+				E720856A229BDAC1000AA7B9 /* LGBaseTopicView.h */,
+				E720856C229BDAC1000AA7B9 /* LGBaseTopicView.m */,
+				E7208577229BDAC3000AA7B9 /* LGBottomTopicView.h */,
+				E7208574229BDAC2000AA7B9 /* LGBottomTopicView.m */,
+				E720856E229BDAC2000AA7B9 /* LGBottomTopicView.xib */,
+				E7208571229BDAC2000AA7B9 /* LGCommentTopicView.h */,
+				E720856D229BDAC1000AA7B9 /* LGCommentTopicView.m */,
+				E720856F229BDAC2000AA7B9 /* LGCommentTopicView.xib */,
+				E7208579229BDAC3000AA7B9 /* LGPictureTopicView.h */,
+				E7208570229BDAC2000AA7B9 /* LGPictureTopicView.m */,
+				E7208573229BDAC2000AA7B9 /* LGPictureTopicView.xib */,
+				E7208572229BDAC2000AA7B9 /* LGTopTopicView.h */,
+				E7208578229BDAC3000AA7B9 /* LGTopTopicView.m */,
+				E7208568229BDAC1000AA7B9 /* LGTopTopicView.xib */,
+				E720856B229BDAC1000AA7B9 /* LGVideoTopicView.h */,
+				E7208569229BDAC1000AA7B9 /* LGVideoTopicView.m */,
+				E7208566229BDAC1000AA7B9 /* LGVideoTopicView.xib */,
+				E7208575229BDAC2000AA7B9 /* LGVoiceTopicView.h */,
+				E7208567229BDAC1000AA7B9 /* LGVoiceTopicView.m */,
+				E7208576229BDAC2000AA7B9 /* LGVoiceTopicView.xib */,
+			);
+			path = CellChildView;
+			sourceTree = "<group>";
+		};
+		E720858A229BDAF2000AA7B9 /* ChildViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E720858B229BDB03000AA7B9 /* LGBaseTopicTableViewController.h */,
+				E720858C229BDB03000AA7B9 /* LGBaseTopicTableViewController.m */,
+			);
+			path = ChildViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -590,14 +715,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7208468229BCEB8000AA7B9 /* LaunchScreen.storyboard in Resources */,
+				E7208591229BDB0E000AA7B9 /* LGSeeBigPictureViewController.xib in Resources */,
 				E72084E4229BD2C9000AA7B9 /* LGFriendThreadViewController.xib in Resources */,
+				E7208583229BDAC3000AA7B9 /* LGPictureTopicView.xib in Resources */,
 				E72084BC229BD263000AA7B9 /* LGSquareCollectionViewCell.xib in Resources */,
+				E7208585229BDAC3000AA7B9 /* LGVoiceTopicView.xib in Resources */,
 				E72084D7229BD2AD000AA7B9 /* LGUserTableViewCell.xib in Resources */,
 				E72084B7229BD246000AA7B9 /* LGMeTableViewController.storyboard in Resources */,
+				E720857C229BDAC3000AA7B9 /* LGTopTopicView.xib in Resources */,
 				E72084F2229BD312000AA7B9 /* LGPublishViewController.xib in Resources */,
+				E7208581229BDAC3000AA7B9 /* LGCommentTopicView.xib in Resources */,
 				E72084D8229BD2AD000AA7B9 /* LGLoginRegisterView.xib in Resources */,
+				E7208580229BDAC3000AA7B9 /* LGBottomTopicView.xib in Resources */,
 				E7208465229BCEB8000AA7B9 /* Assets.xcassets in Resources */,
 				E72084D4229BD2AD000AA7B9 /* LGCategoryTableViewCell.xib in Resources */,
+				E720857A229BDAC3000AA7B9 /* LGVideoTopicView.xib in Resources */,
+				E720850A229BD881000AA7B9 /* LGSubTagTableViewCell.xib in Resources */,
 				E72084E7229BD2C9000AA7B9 /* LGLoginViewController.storyboard in Resources */,
 				E72084E6229BD2C9000AA7B9 /* LGRecommendViewController.xib in Resources */,
 				E7208463229BCEB8000AA7B9 /* Main.storyboard in Resources */,
@@ -661,9 +794,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E72084E9229BD2C9000AA7B9 /* LGLoginViewController.m in Sources */,
+				E720857D229BDAC3000AA7B9 /* LGVideoTopicView.m in Sources */,
 				E72084C5229BD29C000AA7B9 /* LGUserModel.m in Sources */,
+				E7208506229BD871000AA7B9 /* LGSubTagItem.m in Sources */,
 				E7208495229BD144000AA7B9 /* LGPhotoManager.m in Sources */,
 				E72084AB229BD1C2000AA7B9 /* UIBarButtonItem+Item.m in Sources */,
+				E720858D229BDB03000AA7B9 /* LGBaseTopicTableViewController.m in Sources */,
 				E7208492229BD13C000AA7B9 /* LGFileManager.m in Sources */,
 				E72084D3229BD2AD000AA7B9 /* LGLoginRegisterView.m in Sources */,
 				E720846B229BCEB8000AA7B9 /* main.m in Sources */,
@@ -671,23 +807,37 @@
 				E7208489229BD106000AA7B9 /* LGSettingTableViewController.m in Sources */,
 				E72084F3229BD312000AA7B9 /* LGPublishViewController.m in Sources */,
 				E72084D9229BD2AD000AA7B9 /* LGLoginTextField.m in Sources */,
+				E720850E229BD9D8000AA7B9 /* LGTopicViewModel.m in Sources */,
+				E7208599229BDB25000AA7B9 /* LGCommentItem.m in Sources */,
+				E720859B229BDB25000AA7B9 /* LGUserItem.m in Sources */,
 				E72084BB229BD263000AA7B9 /* LGSquareCollectionViewCell.m in Sources */,
 				E72084FD229BD38B000AA7B9 /* LGEssenceViewController.m in Sources */,
 				E72084A9229BD1C2000AA7B9 /* UIView+Frame.m in Sources */,
+				E720857F229BDAC3000AA7B9 /* LGCommentTopicView.m in Sources */,
 				E72084E8229BD2C9000AA7B9 /* LGFriendThreadViewController.m in Sources */,
 				E72084E5229BD2C9000AA7B9 /* LGRecommendViewController.m in Sources */,
 				E7208500229BD3C4000AA7B9 /* LGNewViewController.m in Sources */,
 				E72084AA229BD1C2000AA7B9 /* UIColor+Custom.m in Sources */,
+				E7208589229BDAE4000AA7B9 /* LGTopicCell.m in Sources */,
+				E7208592229BDB0E000AA7B9 /* LGSeeBigPictureViewController.m in Sources */,
+				E720857B229BDAC3000AA7B9 /* LGVoiceTopicView.m in Sources */,
+				E7208503229BD866000AA7B9 /* LGSubTagTableViewController.m in Sources */,
 				E72084B6229BD246000AA7B9 /* LGMeTableViewController.m in Sources */,
 				E72084D6229BD2AD000AA7B9 /* LGFastLoginButton.m in Sources */,
 				E720847E229BD046000AA7B9 /* LGBackView.m in Sources */,
 				E72084C4229BD29C000AA7B9 /* LGCategoryItem.m in Sources */,
 				E72084AC229BD1C2000AA7B9 /* UITextField+Placeholder.m in Sources */,
+				E720857E229BDAC3000AA7B9 /* LGBaseTopicView.m in Sources */,
+				E7208584229BDAC3000AA7B9 /* LGBottomTopicView.m in Sources */,
+				E7208586229BDAC3000AA7B9 /* LGTopTopicView.m in Sources */,
 				E72084DA229BD2AD000AA7B9 /* LGUserTableViewCell.m in Sources */,
 				E720847A229BD03D000AA7B9 /* LGTabBarController.m in Sources */,
+				E720859A229BDB25000AA7B9 /* LGTopicItem.m in Sources */,
+				E7208582229BDAC3000AA7B9 /* LGPictureTopicView.m in Sources */,
 				E72084A7229BD1C2000AA7B9 /* AFHTTPSessionManager+Manager.m in Sources */,
 				E72084EE229BD30A000AA7B9 /* LGReverseButton.m in Sources */,
 				E72084A8229BD1C2000AA7B9 /* NSDate+Date.m in Sources */,
+				E720850B229BD881000AA7B9 /* LGSubTagTableViewCell.m in Sources */,
 				E72084D5229BD2AD000AA7B9 /* LGCategoryTableViewCell.m in Sources */,
 				E72084A6229BD1C2000AA7B9 /* UIImage+Render.m in Sources */,
 				E72084B2229BD23A000AA7B9 /* LGSquareItem.m in Sources */,

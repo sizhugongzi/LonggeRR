@@ -7,25 +7,138 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B87873B84B8623704A91561 /* libPods-LonggeRR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AC8B0FA6C2810E7472DBC08 /* libPods-LonggeRR.a */; };
 		E720845D229BCEB8000AA7B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E720845C229BCEB8000AA7B9 /* AppDelegate.m */; };
-		E7208460229BCEB8000AA7B9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E720845F229BCEB8000AA7B9 /* ViewController.m */; };
 		E7208463229BCEB8000AA7B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7208461229BCEB8000AA7B9 /* Main.storyboard */; };
 		E7208465229BCEB8000AA7B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7208464229BCEB8000AA7B9 /* Assets.xcassets */; };
 		E7208468229BCEB8000AA7B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7208466229BCEB8000AA7B9 /* LaunchScreen.storyboard */; };
 		E720846B229BCEB8000AA7B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E720846A229BCEB8000AA7B9 /* main.m */; };
+		E720847A229BD03D000AA7B9 /* LGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7208476229BD03D000AA7B9 /* LGTabBarController.m */; };
+		E720847B229BD03D000AA7B9 /* LGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7208479229BD03D000AA7B9 /* LGNavigationController.m */; };
+		E720847E229BD046000AA7B9 /* LGBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = E720847D229BD046000AA7B9 /* LGBackView.m */; };
+		E7208489229BD106000AA7B9 /* LGSettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7208487229BD106000AA7B9 /* LGSettingTableViewController.m */; };
+		E720848F229BD134000AA7B9 /* LGBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E720848E229BD134000AA7B9 /* LGBaseViewController.m */; };
+		E7208492229BD13C000AA7B9 /* LGFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E7208490229BD13B000AA7B9 /* LGFileManager.m */; };
+		E7208495229BD144000AA7B9 /* LGPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E7208494229BD144000AA7B9 /* LGPhotoManager.m */; };
+		E72084A6229BD1C2000AA7B9 /* UIImage+Render.m in Sources */ = {isa = PBXBuildFile; fileRef = E7208498229BD1C1000AA7B9 /* UIImage+Render.m */; };
+		E72084A7229BD1C2000AA7B9 /* AFHTTPSessionManager+Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = E7208499229BD1C1000AA7B9 /* AFHTTPSessionManager+Manager.m */; };
+		E72084A8229BD1C2000AA7B9 /* NSDate+Date.m in Sources */ = {isa = PBXBuildFile; fileRef = E720849A229BD1C1000AA7B9 /* NSDate+Date.m */; };
+		E72084A9229BD1C2000AA7B9 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E720849F229BD1C2000AA7B9 /* UIView+Frame.m */; };
+		E72084AA229BD1C2000AA7B9 /* UIColor+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = E72084A1229BD1C2000AA7B9 /* UIColor+Custom.m */; };
+		E72084AB229BD1C2000AA7B9 /* UIBarButtonItem+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = E72084A2229BD1C2000AA7B9 /* UIBarButtonItem+Item.m */; };
+		E72084AC229BD1C2000AA7B9 /* UITextField+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = E72084A3229BD1C2000AA7B9 /* UITextField+Placeholder.m */; };
+		E72084B2229BD23A000AA7B9 /* LGSquareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E72084B0229BD23A000AA7B9 /* LGSquareItem.m */; };
+		E72084B6229BD246000AA7B9 /* LGMeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E72084B4229BD246000AA7B9 /* LGMeTableViewController.m */; };
+		E72084B7229BD246000AA7B9 /* LGMeTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E72084B5229BD246000AA7B9 /* LGMeTableViewController.storyboard */; };
+		E72084BB229BD263000AA7B9 /* LGSquareCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E72084B8229BD263000AA7B9 /* LGSquareCollectionViewCell.m */; };
+		E72084BC229BD263000AA7B9 /* LGSquareCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E72084B9229BD263000AA7B9 /* LGSquareCollectionViewCell.xib */; };
+		E72084C4229BD29C000AA7B9 /* LGCategoryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E72084C0229BD29B000AA7B9 /* LGCategoryItem.m */; };
+		E72084C5229BD29C000AA7B9 /* LGUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E72084C3229BD29C000AA7B9 /* LGUserModel.m */; };
+		E72084D3229BD2AD000AA7B9 /* LGLoginRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = E72084C6229BD2AC000AA7B9 /* LGLoginRegisterView.m */; };
+		E72084D4229BD2AD000AA7B9 /* LGCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E72084C7229BD2AC000AA7B9 /* LGCategoryTableViewCell.xib */; };
+		E72084D5229BD2AD000AA7B9 /* LGCategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E72084C9229BD2AC000AA7B9 /* LGCategoryTableViewCell.m */; };
+		E72084D6229BD2AD000AA7B9 /* LGFastLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E72084CA229BD2AC000AA7B9 /* LGFastLoginButton.m */; };
+		E72084D7229BD2AD000AA7B9 /* LGUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E72084CB229BD2AC000AA7B9 /* LGUserTableViewCell.xib */; };
+		E72084D8229BD2AD000AA7B9 /* LGLoginRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E72084CC229BD2AD000AA7B9 /* LGLoginRegisterView.xib */; };
+		E72084D9229BD2AD000AA7B9 /* LGLoginTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E72084CE229BD2AD000AA7B9 /* LGLoginTextField.m */; };
+		E72084DA229BD2AD000AA7B9 /* LGUserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E72084D1229BD2AD000AA7B9 /* LGUserTableViewCell.m */; };
+		E72084E4229BD2C9000AA7B9 /* LGFriendThreadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E72084DB229BD2C8000AA7B9 /* LGFriendThreadViewController.xib */; };
+		E72084E5229BD2C9000AA7B9 /* LGRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E72084DD229BD2C8000AA7B9 /* LGRecommendViewController.m */; };
+		E72084E6229BD2C9000AA7B9 /* LGRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E72084DE229BD2C8000AA7B9 /* LGRecommendViewController.xib */; };
+		E72084E7229BD2C9000AA7B9 /* LGLoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E72084DF229BD2C8000AA7B9 /* LGLoginViewController.storyboard */; };
+		E72084E8229BD2C9000AA7B9 /* LGFriendThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E72084E0229BD2C9000AA7B9 /* LGFriendThreadViewController.m */; };
+		E72084E9229BD2C9000AA7B9 /* LGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E72084E3229BD2C9000AA7B9 /* LGLoginViewController.m */; };
+		E72084EE229BD30A000AA7B9 /* LGReverseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E72084ED229BD30A000AA7B9 /* LGReverseButton.m */; };
+		E72084F2229BD312000AA7B9 /* LGPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E72084EF229BD312000AA7B9 /* LGPublishViewController.xib */; };
+		E72084F3229BD312000AA7B9 /* LGPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E72084F1229BD312000AA7B9 /* LGPublishViewController.m */; };
+		E72084FD229BD38B000AA7B9 /* LGEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E72084FC229BD38B000AA7B9 /* LGEssenceViewController.m */; };
+		E7208500229BD3C4000AA7B9 /* LGNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E72084FF229BD3C4000AA7B9 /* LGNewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4AC8B0FA6C2810E7472DBC08 /* libPods-LonggeRR.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LonggeRR.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		502CB48474E9EA6C3B2526A1 /* Pods-LonggeRR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LonggeRR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LonggeRR/Pods-LonggeRR.debug.xcconfig"; sourceTree = "<group>"; };
+		DBEFB75BD9DF0D7662B86C10 /* Pods-LonggeRR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LonggeRR.release.xcconfig"; path = "Pods/Target Support Files/Pods-LonggeRR/Pods-LonggeRR.release.xcconfig"; sourceTree = "<group>"; };
 		E7208458229BCEB8000AA7B9 /* LonggeRR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LonggeRR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E720845B229BCEB8000AA7B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E720845C229BCEB8000AA7B9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E720845E229BCEB8000AA7B9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E720845F229BCEB8000AA7B9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E7208462229BCEB8000AA7B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7208464229BCEB8000AA7B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7208467229BCEB8000AA7B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7208469229BCEB8000AA7B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E720846A229BCEB8000AA7B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E7208476229BD03D000AA7B9 /* LGTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGTabBarController.m; sourceTree = "<group>"; };
+		E7208477229BD03D000AA7B9 /* LGTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGTabBarController.h; sourceTree = "<group>"; };
+		E7208478229BD03D000AA7B9 /* LGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGNavigationController.h; sourceTree = "<group>"; };
+		E7208479229BD03D000AA7B9 /* LGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGNavigationController.m; sourceTree = "<group>"; };
+		E720847C229BD046000AA7B9 /* LGBackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGBackView.h; sourceTree = "<group>"; };
+		E720847D229BD046000AA7B9 /* LGBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGBackView.m; sourceTree = "<group>"; };
+		E7208487229BD106000AA7B9 /* LGSettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSettingTableViewController.m; sourceTree = "<group>"; };
+		E7208488229BD106000AA7B9 /* LGSettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSettingTableViewController.h; sourceTree = "<group>"; };
+		E720848D229BD134000AA7B9 /* LGBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGBaseViewController.h; sourceTree = "<group>"; };
+		E720848E229BD134000AA7B9 /* LGBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGBaseViewController.m; sourceTree = "<group>"; };
+		E7208490229BD13B000AA7B9 /* LGFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGFileManager.m; sourceTree = "<group>"; };
+		E7208491229BD13C000AA7B9 /* LGFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGFileManager.h; sourceTree = "<group>"; };
+		E7208493229BD143000AA7B9 /* LGPhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGPhotoManager.h; sourceTree = "<group>"; };
+		E7208494229BD144000AA7B9 /* LGPhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGPhotoManager.m; sourceTree = "<group>"; };
+		E7208496229BD1A4000AA7B9 /* LonggeRR.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LonggeRR.pch; path = LonggeRR/LonggeRR.pch; sourceTree = SOURCE_ROOT; };
+		E7208498229BD1C1000AA7B9 /* UIImage+Render.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Render.m"; sourceTree = "<group>"; };
+		E7208499229BD1C1000AA7B9 /* AFHTTPSessionManager+Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+Manager.m"; sourceTree = "<group>"; };
+		E720849A229BD1C1000AA7B9 /* NSDate+Date.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Date.m"; sourceTree = "<group>"; };
+		E720849B229BD1C1000AA7B9 /* NSDate+Date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Date.h"; sourceTree = "<group>"; };
+		E720849C229BD1C2000AA7B9 /* AFHTTPSessionManager+Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+Manager.h"; sourceTree = "<group>"; };
+		E720849D229BD1C2000AA7B9 /* UIBarButtonItem+Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Item.h"; sourceTree = "<group>"; };
+		E720849E229BD1C2000AA7B9 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		E720849F229BD1C2000AA7B9 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		E72084A0229BD1C2000AA7B9 /* UIColor+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Custom.h"; sourceTree = "<group>"; };
+		E72084A1229BD1C2000AA7B9 /* UIColor+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Custom.m"; sourceTree = "<group>"; };
+		E72084A2229BD1C2000AA7B9 /* UIBarButtonItem+Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Item.m"; sourceTree = "<group>"; };
+		E72084A3229BD1C2000AA7B9 /* UITextField+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Placeholder.m"; sourceTree = "<group>"; };
+		E72084A4229BD1C2000AA7B9 /* UIImage+Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Render.h"; sourceTree = "<group>"; };
+		E72084A5229BD1C2000AA7B9 /* UITextField+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Placeholder.h"; sourceTree = "<group>"; };
+		E72084B0229BD23A000AA7B9 /* LGSquareItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSquareItem.m; sourceTree = "<group>"; };
+		E72084B1229BD23A000AA7B9 /* LGSquareItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSquareItem.h; sourceTree = "<group>"; };
+		E72084B3229BD246000AA7B9 /* LGMeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGMeTableViewController.h; sourceTree = "<group>"; };
+		E72084B4229BD246000AA7B9 /* LGMeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGMeTableViewController.m; sourceTree = "<group>"; };
+		E72084B5229BD246000AA7B9 /* LGMeTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LGMeTableViewController.storyboard; sourceTree = "<group>"; };
+		E72084B8229BD263000AA7B9 /* LGSquareCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGSquareCollectionViewCell.m; sourceTree = "<group>"; };
+		E72084B9229BD263000AA7B9 /* LGSquareCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGSquareCollectionViewCell.xib; sourceTree = "<group>"; };
+		E72084BA229BD263000AA7B9 /* LGSquareCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGSquareCollectionViewCell.h; sourceTree = "<group>"; };
+		E72084C0229BD29B000AA7B9 /* LGCategoryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGCategoryItem.m; sourceTree = "<group>"; };
+		E72084C1229BD29B000AA7B9 /* LGCategoryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGCategoryItem.h; sourceTree = "<group>"; };
+		E72084C2229BD29B000AA7B9 /* LGUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGUserModel.h; sourceTree = "<group>"; };
+		E72084C3229BD29C000AA7B9 /* LGUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGUserModel.m; sourceTree = "<group>"; };
+		E72084C6229BD2AC000AA7B9 /* LGLoginRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGLoginRegisterView.m; sourceTree = "<group>"; };
+		E72084C7229BD2AC000AA7B9 /* LGCategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGCategoryTableViewCell.xib; sourceTree = "<group>"; };
+		E72084C8229BD2AC000AA7B9 /* LGLoginTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGLoginTextField.h; sourceTree = "<group>"; };
+		E72084C9229BD2AC000AA7B9 /* LGCategoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGCategoryTableViewCell.m; sourceTree = "<group>"; };
+		E72084CA229BD2AC000AA7B9 /* LGFastLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGFastLoginButton.m; sourceTree = "<group>"; };
+		E72084CB229BD2AC000AA7B9 /* LGUserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGUserTableViewCell.xib; sourceTree = "<group>"; };
+		E72084CC229BD2AD000AA7B9 /* LGLoginRegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGLoginRegisterView.xib; sourceTree = "<group>"; };
+		E72084CD229BD2AD000AA7B9 /* LGLoginRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGLoginRegisterView.h; sourceTree = "<group>"; };
+		E72084CE229BD2AD000AA7B9 /* LGLoginTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGLoginTextField.m; sourceTree = "<group>"; };
+		E72084CF229BD2AD000AA7B9 /* LGUserTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGUserTableViewCell.h; sourceTree = "<group>"; };
+		E72084D0229BD2AD000AA7B9 /* LGFastLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGFastLoginButton.h; sourceTree = "<group>"; };
+		E72084D1229BD2AD000AA7B9 /* LGUserTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGUserTableViewCell.m; sourceTree = "<group>"; };
+		E72084D2229BD2AD000AA7B9 /* LGCategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGCategoryTableViewCell.h; sourceTree = "<group>"; };
+		E72084DB229BD2C8000AA7B9 /* LGFriendThreadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGFriendThreadViewController.xib; sourceTree = "<group>"; };
+		E72084DC229BD2C8000AA7B9 /* LGRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGRecommendViewController.h; sourceTree = "<group>"; };
+		E72084DD229BD2C8000AA7B9 /* LGRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGRecommendViewController.m; sourceTree = "<group>"; };
+		E72084DE229BD2C8000AA7B9 /* LGRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGRecommendViewController.xib; sourceTree = "<group>"; };
+		E72084DF229BD2C8000AA7B9 /* LGLoginViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LGLoginViewController.storyboard; sourceTree = "<group>"; };
+		E72084E0229BD2C9000AA7B9 /* LGFriendThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGFriendThreadViewController.m; sourceTree = "<group>"; };
+		E72084E1229BD2C9000AA7B9 /* LGFriendThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGFriendThreadViewController.h; sourceTree = "<group>"; };
+		E72084E2229BD2C9000AA7B9 /* LGLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGLoginViewController.h; sourceTree = "<group>"; };
+		E72084E3229BD2C9000AA7B9 /* LGLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGLoginViewController.m; sourceTree = "<group>"; };
+		E72084EC229BD30A000AA7B9 /* LGReverseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGReverseButton.h; sourceTree = "<group>"; };
+		E72084ED229BD30A000AA7B9 /* LGReverseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGReverseButton.m; sourceTree = "<group>"; };
+		E72084EF229BD312000AA7B9 /* LGPublishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LGPublishViewController.xib; sourceTree = "<group>"; };
+		E72084F0229BD312000AA7B9 /* LGPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGPublishViewController.h; sourceTree = "<group>"; };
+		E72084F1229BD312000AA7B9 /* LGPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGPublishViewController.m; sourceTree = "<group>"; };
+		E72084FB229BD38B000AA7B9 /* LGEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGEssenceViewController.h; sourceTree = "<group>"; };
+		E72084FC229BD38B000AA7B9 /* LGEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGEssenceViewController.m; sourceTree = "<group>"; };
+		E72084FE229BD3C3000AA7B9 /* LGNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGNewViewController.h; sourceTree = "<group>"; };
+		E72084FF229BD3C4000AA7B9 /* LGNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGNewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +146,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B87873B84B8623704A91561 /* libPods-LonggeRR.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A3D31AD3DD7B184F80D365E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AC8B0FA6C2810E7472DBC08 /* libPods-LonggeRR.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BBD4ECFB39AA1C4BA93932B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				502CB48474E9EA6C3B2526A1 /* Pods-LonggeRR.debug.xcconfig */,
+				DBEFB75BD9DF0D7662B86C10 /* Pods-LonggeRR.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E720844F229BCEB8000AA7B9 = {
 			isa = PBXGroup;
 			children = (
 				E720845A229BCEB8000AA7B9 /* LonggeRR */,
 				E7208459229BCEB8000AA7B9 /* Products */,
+				BBD4ECFB39AA1C4BA93932B5 /* Pods */,
+				3A3D31AD3DD7B184F80D365E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +191,7 @@
 		E720845A229BCEB8000AA7B9 /* LonggeRR */ = {
 			isa = PBXGroup;
 			children = (
-				E720845B229BCEB8000AA7B9 /* AppDelegate.h */,
-				E720845C229BCEB8000AA7B9 /* AppDelegate.m */,
-				E720845E229BCEB8000AA7B9 /* ViewController.h */,
-				E720845F229BCEB8000AA7B9 /* ViewController.m */,
+				E7208471229BCFBC000AA7B9 /* Classes */,
 				E7208461229BCEB8000AA7B9 /* Main.storyboard */,
 				E7208464229BCEB8000AA7B9 /* Assets.xcassets */,
 				E7208466229BCEB8000AA7B9 /* LaunchScreen.storyboard */,
@@ -71,6 +201,335 @@
 			path = LonggeRR;
 			sourceTree = "<group>";
 		};
+		E7208471229BCFBC000AA7B9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E7208486229BD0C7000AA7B9 /* Setting */,
+				E7208485229BD0BF000AA7B9 /* Util */,
+				E7208484229BD0B7000AA7B9 /* Other */,
+				E7208483229BD0B0000AA7B9 /* Me */,
+				E7208482229BD0A1000AA7B9 /* FriendThread */,
+				E7208481229BD099000AA7B9 /* Publish */,
+				E7208480229BD092000AA7B9 /* New */,
+				E720847F229BD087000AA7B9 /* Essence */,
+				E7208473229BD011000AA7B9 /* Main */,
+				E7208472229BCFD9000AA7B9 /* AppDelegate */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		E7208472229BCFD9000AA7B9 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E720845B229BCEB8000AA7B9 /* AppDelegate.h */,
+				E720845C229BCEB8000AA7B9 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		E7208473229BD011000AA7B9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E7208475229BD024000AA7B9 /* Controller */,
+				E7208474229BD01F000AA7B9 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E7208474229BD01F000AA7B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E720847C229BD046000AA7B9 /* LGBackView.h */,
+				E720847D229BD046000AA7B9 /* LGBackView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E7208475229BD024000AA7B9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E7208478229BD03D000AA7B9 /* LGNavigationController.h */,
+				E7208479229BD03D000AA7B9 /* LGNavigationController.m */,
+				E7208477229BD03D000AA7B9 /* LGTabBarController.h */,
+				E7208476229BD03D000AA7B9 /* LGTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E720847F229BD087000AA7B9 /* Essence */ = {
+			isa = PBXGroup;
+			children = (
+				E72084F9229BD367000AA7B9 /* ViewModel */,
+				E72084F7229BD343000AA7B9 /* View */,
+				E72084F6229BD33E000AA7B9 /* Model */,
+				E72084F5229BD337000AA7B9 /* Controller */,
+			);
+			path = Essence;
+			sourceTree = "<group>";
+		};
+		E7208480229BD092000AA7B9 /* New */ = {
+			isa = PBXGroup;
+			children = (
+				E72084FA229BD378000AA7B9 /* Model */,
+				E72084F8229BD347000AA7B9 /* View */,
+				E72084F4229BD32E000AA7B9 /* Controller */,
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
+		E7208481229BD099000AA7B9 /* Publish */ = {
+			isa = PBXGroup;
+			children = (
+				E72084EB229BD2F3000AA7B9 /* Controller */,
+				E72084EA229BD2E0000AA7B9 /* View */,
+			);
+			path = Publish;
+			sourceTree = "<group>";
+		};
+		E7208482229BD0A1000AA7B9 /* FriendThread */ = {
+			isa = PBXGroup;
+			children = (
+				E72084BF229BD28B000AA7B9 /* View */,
+				E72084BE229BD284000AA7B9 /* Model */,
+				E72084BD229BD278000AA7B9 /* Controller */,
+			);
+			path = FriendThread;
+			sourceTree = "<group>";
+		};
+		E7208483229BD0B0000AA7B9 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				E72084AF229BD220000AA7B9 /* Controller */,
+				E72084AE229BD218000AA7B9 /* Model */,
+				E72084AD229BD212000AA7B9 /* View */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		E7208484229BD0B7000AA7B9 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E7208497229BD1A7000AA7B9 /* Category */,
+				E7208496229BD1A4000AA7B9 /* LonggeRR.pch */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		E7208485229BD0BF000AA7B9 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				E720848C229BD129000AA7B9 /* Base */,
+				E720848B229BD123000AA7B9 /* File */,
+				E720848A229BD11A000AA7B9 /* Photo */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		E7208486229BD0C7000AA7B9 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				E7208488229BD106000AA7B9 /* LGSettingTableViewController.h */,
+				E7208487229BD106000AA7B9 /* LGSettingTableViewController.m */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		E720848A229BD11A000AA7B9 /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				E7208493229BD143000AA7B9 /* LGPhotoManager.h */,
+				E7208494229BD144000AA7B9 /* LGPhotoManager.m */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		E720848B229BD123000AA7B9 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				E7208491229BD13C000AA7B9 /* LGFileManager.h */,
+				E7208490229BD13B000AA7B9 /* LGFileManager.m */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		E720848C229BD129000AA7B9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E720848D229BD134000AA7B9 /* LGBaseViewController.h */,
+				E720848E229BD134000AA7B9 /* LGBaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E7208497229BD1A7000AA7B9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E720849C229BD1C2000AA7B9 /* AFHTTPSessionManager+Manager.h */,
+				E7208499229BD1C1000AA7B9 /* AFHTTPSessionManager+Manager.m */,
+				E720849B229BD1C1000AA7B9 /* NSDate+Date.h */,
+				E720849A229BD1C1000AA7B9 /* NSDate+Date.m */,
+				E720849D229BD1C2000AA7B9 /* UIBarButtonItem+Item.h */,
+				E72084A2229BD1C2000AA7B9 /* UIBarButtonItem+Item.m */,
+				E72084A0229BD1C2000AA7B9 /* UIColor+Custom.h */,
+				E72084A1229BD1C2000AA7B9 /* UIColor+Custom.m */,
+				E72084A4229BD1C2000AA7B9 /* UIImage+Render.h */,
+				E7208498229BD1C1000AA7B9 /* UIImage+Render.m */,
+				E72084A5229BD1C2000AA7B9 /* UITextField+Placeholder.h */,
+				E72084A3229BD1C2000AA7B9 /* UITextField+Placeholder.m */,
+				E720849E229BD1C2000AA7B9 /* UIView+Frame.h */,
+				E720849F229BD1C2000AA7B9 /* UIView+Frame.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E72084AD229BD212000AA7B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E72084BA229BD263000AA7B9 /* LGSquareCollectionViewCell.h */,
+				E72084B8229BD263000AA7B9 /* LGSquareCollectionViewCell.m */,
+				E72084B9229BD263000AA7B9 /* LGSquareCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E72084AE229BD218000AA7B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E72084B1229BD23A000AA7B9 /* LGSquareItem.h */,
+				E72084B0229BD23A000AA7B9 /* LGSquareItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E72084AF229BD220000AA7B9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E72084B3229BD246000AA7B9 /* LGMeTableViewController.h */,
+				E72084B4229BD246000AA7B9 /* LGMeTableViewController.m */,
+				E72084B5229BD246000AA7B9 /* LGMeTableViewController.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E72084BD229BD278000AA7B9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E72084E1229BD2C9000AA7B9 /* LGFriendThreadViewController.h */,
+				E72084E0229BD2C9000AA7B9 /* LGFriendThreadViewController.m */,
+				E72084DB229BD2C8000AA7B9 /* LGFriendThreadViewController.xib */,
+				E72084E2229BD2C9000AA7B9 /* LGLoginViewController.h */,
+				E72084E3229BD2C9000AA7B9 /* LGLoginViewController.m */,
+				E72084DF229BD2C8000AA7B9 /* LGLoginViewController.storyboard */,
+				E72084DC229BD2C8000AA7B9 /* LGRecommendViewController.h */,
+				E72084DD229BD2C8000AA7B9 /* LGRecommendViewController.m */,
+				E72084DE229BD2C8000AA7B9 /* LGRecommendViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E72084BE229BD284000AA7B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E72084C1229BD29B000AA7B9 /* LGCategoryItem.h */,
+				E72084C0229BD29B000AA7B9 /* LGCategoryItem.m */,
+				E72084C2229BD29B000AA7B9 /* LGUserModel.h */,
+				E72084C3229BD29C000AA7B9 /* LGUserModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E72084BF229BD28B000AA7B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E72084CD229BD2AD000AA7B9 /* LGLoginRegisterView.h */,
+				E72084C6229BD2AC000AA7B9 /* LGLoginRegisterView.m */,
+				E72084CC229BD2AD000AA7B9 /* LGLoginRegisterView.xib */,
+				E72084D0229BD2AD000AA7B9 /* LGFastLoginButton.h */,
+				E72084CA229BD2AC000AA7B9 /* LGFastLoginButton.m */,
+				E72084C8229BD2AC000AA7B9 /* LGLoginTextField.h */,
+				E72084CE229BD2AD000AA7B9 /* LGLoginTextField.m */,
+				E72084D2229BD2AD000AA7B9 /* LGCategoryTableViewCell.h */,
+				E72084C9229BD2AC000AA7B9 /* LGCategoryTableViewCell.m */,
+				E72084C7229BD2AC000AA7B9 /* LGCategoryTableViewCell.xib */,
+				E72084CF229BD2AD000AA7B9 /* LGUserTableViewCell.h */,
+				E72084D1229BD2AD000AA7B9 /* LGUserTableViewCell.m */,
+				E72084CB229BD2AC000AA7B9 /* LGUserTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E72084EA229BD2E0000AA7B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E72084EC229BD30A000AA7B9 /* LGReverseButton.h */,
+				E72084ED229BD30A000AA7B9 /* LGReverseButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E72084EB229BD2F3000AA7B9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E72084F0229BD312000AA7B9 /* LGPublishViewController.h */,
+				E72084F1229BD312000AA7B9 /* LGPublishViewController.m */,
+				E72084EF229BD312000AA7B9 /* LGPublishViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E72084F4229BD32E000AA7B9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E72084FE229BD3C3000AA7B9 /* LGNewViewController.h */,
+				E72084FF229BD3C4000AA7B9 /* LGNewViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E72084F5229BD337000AA7B9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E72084FB229BD38B000AA7B9 /* LGEssenceViewController.h */,
+				E72084FC229BD38B000AA7B9 /* LGEssenceViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E72084F6229BD33E000AA7B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E72084F7229BD343000AA7B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E72084F8229BD347000AA7B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E72084F9229BD367000AA7B9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E72084FA229BD378000AA7B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +537,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E720846E229BCEB8000AA7B9 /* Build configuration list for PBXNativeTarget "LonggeRR" */;
 			buildPhases = (
+				55D7F7C5718EDB9ABDD0724E /* [CP] Check Pods Manifest.lock */,
 				E7208454229BCEB8000AA7B9 /* Sources */,
 				E7208455229BCEB8000AA7B9 /* Frameworks */,
 				E7208456229BCEB8000AA7B9 /* Resources */,
+				3A7682D008930BBFD02C56A9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,20 +590,108 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7208468229BCEB8000AA7B9 /* LaunchScreen.storyboard in Resources */,
+				E72084E4229BD2C9000AA7B9 /* LGFriendThreadViewController.xib in Resources */,
+				E72084BC229BD263000AA7B9 /* LGSquareCollectionViewCell.xib in Resources */,
+				E72084D7229BD2AD000AA7B9 /* LGUserTableViewCell.xib in Resources */,
+				E72084B7229BD246000AA7B9 /* LGMeTableViewController.storyboard in Resources */,
+				E72084F2229BD312000AA7B9 /* LGPublishViewController.xib in Resources */,
+				E72084D8229BD2AD000AA7B9 /* LGLoginRegisterView.xib in Resources */,
 				E7208465229BCEB8000AA7B9 /* Assets.xcassets in Resources */,
+				E72084D4229BD2AD000AA7B9 /* LGCategoryTableViewCell.xib in Resources */,
+				E72084E7229BD2C9000AA7B9 /* LGLoginViewController.storyboard in Resources */,
+				E72084E6229BD2C9000AA7B9 /* LGRecommendViewController.xib in Resources */,
 				E7208463229BCEB8000AA7B9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A7682D008930BBFD02C56A9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LonggeRR/Pods-LonggeRR-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LonggeRR/Pods-LonggeRR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55D7F7C5718EDB9ABDD0724E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LonggeRR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E7208454229BCEB8000AA7B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7208460229BCEB8000AA7B9 /* ViewController.m in Sources */,
+				E72084E9229BD2C9000AA7B9 /* LGLoginViewController.m in Sources */,
+				E72084C5229BD29C000AA7B9 /* LGUserModel.m in Sources */,
+				E7208495229BD144000AA7B9 /* LGPhotoManager.m in Sources */,
+				E72084AB229BD1C2000AA7B9 /* UIBarButtonItem+Item.m in Sources */,
+				E7208492229BD13C000AA7B9 /* LGFileManager.m in Sources */,
+				E72084D3229BD2AD000AA7B9 /* LGLoginRegisterView.m in Sources */,
 				E720846B229BCEB8000AA7B9 /* main.m in Sources */,
+				E720848F229BD134000AA7B9 /* LGBaseViewController.m in Sources */,
+				E7208489229BD106000AA7B9 /* LGSettingTableViewController.m in Sources */,
+				E72084F3229BD312000AA7B9 /* LGPublishViewController.m in Sources */,
+				E72084D9229BD2AD000AA7B9 /* LGLoginTextField.m in Sources */,
+				E72084BB229BD263000AA7B9 /* LGSquareCollectionViewCell.m in Sources */,
+				E72084FD229BD38B000AA7B9 /* LGEssenceViewController.m in Sources */,
+				E72084A9229BD1C2000AA7B9 /* UIView+Frame.m in Sources */,
+				E72084E8229BD2C9000AA7B9 /* LGFriendThreadViewController.m in Sources */,
+				E72084E5229BD2C9000AA7B9 /* LGRecommendViewController.m in Sources */,
+				E7208500229BD3C4000AA7B9 /* LGNewViewController.m in Sources */,
+				E72084AA229BD1C2000AA7B9 /* UIColor+Custom.m in Sources */,
+				E72084B6229BD246000AA7B9 /* LGMeTableViewController.m in Sources */,
+				E72084D6229BD2AD000AA7B9 /* LGFastLoginButton.m in Sources */,
+				E720847E229BD046000AA7B9 /* LGBackView.m in Sources */,
+				E72084C4229BD29C000AA7B9 /* LGCategoryItem.m in Sources */,
+				E72084AC229BD1C2000AA7B9 /* UITextField+Placeholder.m in Sources */,
+				E72084DA229BD2AD000AA7B9 /* LGUserTableViewCell.m in Sources */,
+				E720847A229BD03D000AA7B9 /* LGTabBarController.m in Sources */,
+				E72084A7229BD1C2000AA7B9 /* AFHTTPSessionManager+Manager.m in Sources */,
+				E72084EE229BD30A000AA7B9 /* LGReverseButton.m in Sources */,
+				E72084A8229BD1C2000AA7B9 /* NSDate+Date.m in Sources */,
+				E72084D5229BD2AD000AA7B9 /* LGCategoryTableViewCell.m in Sources */,
+				E72084A6229BD1C2000AA7B9 /* UIImage+Render.m in Sources */,
+				E72084B2229BD23A000AA7B9 /* LGSquareItem.m in Sources */,
+				E720847B229BD03D000AA7B9 /* LGNavigationController.m in Sources */,
 				E720845D229BCEB8000AA7B9 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,10 +832,12 @@
 		};
 		E720846F229BCEB8000AA7B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 502CB48474E9EA6C3B2526A1 /* Pods-LonggeRR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BS36FCBU7X;
+				GCC_PREFIX_HEADER = LonggeRR/LonggeRR.pch;
 				INFOPLIST_FILE = LonggeRR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,10 +851,12 @@
 		};
 		E7208470229BCEB8000AA7B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBEFB75BD9DF0D7662B86C10 /* Pods-LonggeRR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BS36FCBU7X;
+				GCC_PREFIX_HEADER = LonggeRR/LonggeRR.pch;
 				INFOPLIST_FILE = LonggeRR/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

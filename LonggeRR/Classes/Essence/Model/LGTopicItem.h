@@ -10,7 +10,7 @@
 
 @class LGCommentItem;
 
-typedef enum : NSUInteger{
+typedef enum : NSUInteger {
     LGTopicItemTypeAll = 1,
     LGTopicItemTypePicture = 10,
     LGTopicItemTypeVideo = 41,
@@ -24,20 +24,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 //枚举
 @property (nonatomic,assign) LGTopicItemType type;
-
 //1顶部View
 @property (nonatomic,strong) NSString *profile_image;
 @property (nonatomic,strong) NSString *screen_name;
 @property (nonatomic,strong) NSString *text;
 @property (nonatomic,strong) NSString *create_time;
-
 //2中间图片的View
 @property (nonatomic,strong) NSString *image0;
 @property (nonatomic,assign) BOOL is_gif;
 @property (nonatomic,assign) CGFloat width;
 @property (nonatomic,assign) CGFloat height;
 @property (nonatomic,assign) BOOL is_bigPicture;
-
 //视频
 @property (nonatomic,strong) NSString *videourl;
 @property (nonatomic,assign) NSInteger videotime;
@@ -45,11 +42,9 @@ NS_ASSUME_NONNULL_BEGIN
 //声音
 @property (nonatomic,strong) NSString *voiceurl;
 @property (nonatomic,assign) NSInteger voicetime;
-
 //处理最热评论数据
 @property (nonatomic,strong) NSArray *top_cmt;
 @property (nonatomic,strong) LGCommentItem *topComment;
-
 //底部View属性
 @property (nonatomic,assign) CGFloat cai;
 @property (nonatomic,assign) CGFloat ding;

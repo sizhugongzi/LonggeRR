@@ -12,12 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (Frame)
 
-@property CGFloat xmg_centerX;
-@property CGFloat xmg_centerY;
-@property CGFloat xmg_x;
-@property CGFloat xmg_y;
-@property CGFloat xmg_width;
-@property CGFloat xmg_height;
+@property (assign,nonatomic) CGFloat xmg_centerX;
+@property (assign,nonatomic) CGFloat xmg_centerY;
+@property (assign,nonatomic) CGFloat xmg_x;
+@property (assign,nonatomic) CGFloat xmg_y;
+@property (assign,nonatomic) CGFloat xmg_width;
+@property (assign,nonatomic) CGFloat xmg_height;
 
 @end
 

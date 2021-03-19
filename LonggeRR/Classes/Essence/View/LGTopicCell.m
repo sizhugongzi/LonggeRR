@@ -29,34 +29,28 @@
 
 @implementation LGTopicCell
 
-- (void)setViewModel:(LGTopicViewModel *)viewModel
-{
+- (void)setViewModel:(LGTopicViewModel *)viewModel {
     _viewModel = viewModel;
     
     //顶部View
     _topTopicView.topicItem = viewModel.topicItem;
     _topTopicView.frame = viewModel.topViewFrame;
-    
     //中间View
     if (viewModel.topicItem.type == LGTopicItemTypePicture) {
         _pictureView.topicItem = viewModel.topicItem;
         _pictureView.frame = viewModel.middleViewFrame;
-        
         _videoView.hidden = YES;
         _voiceView.hidden = YES;
         _pictureView.hidden = NO;
-        
     }else if (viewModel.topicItem.type == LGTopicItemTypeVideo){
         _videoView.topicItem = viewModel.topicItem;
         _videoView.frame = viewModel.middleViewFrame;
-        
         _videoView.hidden = NO;
         _pictureView.hidden = YES;
         _voiceView.hidden = YES;
     }else if (viewModel.topicItem.type == LGTopicItemTypeVoice){
         _voiceView.topicItem = viewModel.topicItem;
         _voiceView.frame = viewModel.middleViewFrame;
-        
         _videoView.hidden = YES;
         _pictureView.hidden = YES;
         _voiceView.hidden = NO;
@@ -73,15 +67,13 @@
     }else{
         _commentView.hidden = YES;
     }
-    
     //设置底部View
     _bottomtView.topicItem = viewModel.topicItem;
     _bottomtView.frame = viewModel.bottomViewFrame;
 }
 
 
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-{
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         //顶部view
         LGTopTopicView *topTopicView = [LGTopTopicView viewForNib];
@@ -108,7 +100,6 @@
         LGBottomTopicView *bottomtView = [LGBottomTopicView viewForNib];
         [self.contentView addSubview:bottomtView];
         _bottomtView = bottomtView;
-       
     }
     return self;
 }

@@ -10,8 +10,7 @@
 
 @implementation LGBaseTopicView
 
-+(instancetype)viewForNib
-{
++ (instancetype)viewForNib {
     return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] firstObject];
 }
 

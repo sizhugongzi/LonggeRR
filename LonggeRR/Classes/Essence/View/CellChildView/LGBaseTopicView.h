@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,strong) LGTopicItem *topicItem;
 
-+(instancetype)viewForNib;
++ (instancetype)viewForNib;
 
 @end
 

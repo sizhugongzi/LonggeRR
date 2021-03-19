@@ -22,8 +22,7 @@
 
 @implementation LGTopTopicView
 
-- (void)setTopicItem:(LGTopicItem *)topicItem
-{
+- (void)setTopicItem:(LGTopicItem *)topicItem {
     [super setTopicItem:topicItem];
     
     [_iconView sd_setImageWithURL:[NSURL URLWithString:topicItem.profile_image]];
@@ -32,7 +31,6 @@
     //处理时间
     _timeLabel.text = [self timeStr:topicItem];
 }
-
 
 - (IBAction)clickMore:(id)sender {
     UIAlertController *alertVc = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:0];
@@ -44,8 +42,7 @@
     [rootVc presentViewController:alertVc animated:YES completion:nil];
 }
 
--(NSString *)timeStr:(LGTopicItem *)topicItem
-{
+- (NSString *)timeStr:(LGTopicItem *)topicItem {
     NSString *str = topicItem.create_time;
     //发帖日期字符串转发帖日期对象
     NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
@@ -54,19 +51,12 @@
     NSDate *createDate = [fmt dateFromString:str];
     //获取发帖日期与当前日期时间差值
     NSDateComponents *detalCmp = [createDate datalWithNow];
-    
     if ([createDate  isThisYear]) {//今年
-        
         if ([createDate isThisToday]) {//今天
-            
             if (detalCmp.hour > 1) {
-                
                 str = [NSString stringWithFormat:@"%ld小时前",detalCmp.hour];
-                
             }else if (detalCmp.minute >= 1){
-                
                 str = [NSString stringWithFormat:@"%ld分钟前",detalCmp.minute];
-                
             }else{//刚刚
                 str = @"刚刚";
             }
@@ -80,6 +70,5 @@
     }
     return str;
 }
-
 
 @end

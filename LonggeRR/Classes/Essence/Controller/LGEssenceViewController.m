@@ -27,8 +27,7 @@
     [self setupAllChildViewController];
 }
 
--(void)setupAllChildViewController
-{
+- (void)setupAllChildViewController {
     //全部
     LGBaseTopicTableViewController *allTableVC = [[LGBaseTopicTableViewController alloc] init];
     allTableVC.title = @"全部";
@@ -56,9 +55,7 @@
     [self addChildViewController:textTableVC];
 }
 
-
-- (void)setupNavigationBar
-{
+- (void)setupNavigationBar {
     //设置导航条内容
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
     //左边
@@ -68,13 +65,11 @@
     self.navigationItem.rightBarButtonItem = item;
 }
 
-- (void)game
-{
+- (void)game {
     NSLog(@"点击了精华控制器右边的游戏按钮");
 }
 
-- (void)setting
-{
+- (void)setting {
     NSLog(@"点击了精华控制器右边的设置按钮");
 }
 

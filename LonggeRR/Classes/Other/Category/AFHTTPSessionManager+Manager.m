@@ -10,8 +10,7 @@
 
 @implementation AFHTTPSessionManager (Manager)
 
-+ (instancetype)xl_manger
-{
++ (instancetype)xl_manger {
     AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
     AFJSONResponseSerializer *response = [AFJSONResponseSerializer serializer];
     response.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/json",@"text/javascript",@"text/html",nil];

@@ -19,8 +19,7 @@
 
 @implementation LGSubTagTableViewCell
 
-- (void)setFrame:(CGRect)frame
-{
+- (void)setFrame:(CGRect)frame {
     frame.size.height -= 10;
     frame.origin.y += 10;
     frame.origin.x += 10;
@@ -29,8 +28,7 @@
     [super setFrame:frame];
 }
 
-- (void)setItem:(LGSubTagItem *)item
-{
+- (void)setItem:(LGSubTagItem *)item {
     _item = item;
     
     [_iconView sd_setImageWithURL:[NSURL URLWithString:item.image_list] placeholderImage: [UIImage imageNamed:@"mainCellBackground"]];
@@ -44,11 +42,9 @@
         numStr = [numStr stringByReplacingOccurrencesOfString:@".0" withString:@""];
     }
     _numView.text = numStr;
-    
 }
 
-+(instancetype)cell
-{
++ (instancetype)cell {
     return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] firstObject];
 }
 
@@ -58,6 +54,5 @@
     _iconView.layer.cornerRadius = _iconView.xmg_width * 0.5;
     _iconView.layer.masksToBounds = YES;
 }
-
 
 @end

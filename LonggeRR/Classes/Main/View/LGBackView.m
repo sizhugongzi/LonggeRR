@@ -11,8 +11,7 @@
 
 @implementation LGBackView
 
-+ (instancetype)backViewWithImage:(UIImage *)imageNormal highImage:(UIImage *)imageHighlighted target:(id)target action: (SEL)action title:(NSString *)title
-{
++ (instancetype)backViewWithImage:(UIImage *)imageNormal highImage:(UIImage *)imageHighlighted target:(id)target action: (SEL)action title:(NSString *)title {
     UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [backButton setTitle:title forState:UIControlStateNormal];
     [backButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];

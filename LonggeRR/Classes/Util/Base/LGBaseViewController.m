@@ -23,8 +23,7 @@ static NSString * const ID = @"cell";
 
 @implementation LGBaseViewController
 
-- (NSMutableArray *)btns
-{
+- (NSMutableArray *)btns {
     if (_btns == nil) {
         _btns = [NSMutableArray array];
     }
@@ -42,8 +41,7 @@ static NSString * const ID = @"cell";
     self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
+- (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
     if (_isInitial == NO) {
@@ -54,20 +52,16 @@ static NSString * const ID = @"cell";
 }
 
 #pragma mark --- 点击标题的时候会调用
-- (void)titleClick:(UIButton *)button
-{
+- (void)titleClick:(UIButton *)button {
     NSInteger i = button.tag;
-    
     [self selButton:button];
-    
     //滚动对应的位置
     CGFloat offsetX = i * LGScreenW;
     _bottomCollectionView.contentOffset = CGPointMake(offsetX, 0);
 }
 
 #pragma mark --- 选中标题
-- (void)selButton:(UIButton *)button
-{
+- (void)selButton:(UIButton *)button {
     _selectedButton.selected = NO;
     button.selected = YES;
     _selectedButton = button;
@@ -77,8 +71,7 @@ static NSString * const ID = @"cell";
     }];
 }
 
-- (void)setupAllTitleButton
-{
+- (void)setupAllTitleButton {
     NSUInteger count = self.childViewControllers.count;
     CGFloat btnX = 0;
     CGFloat btnW = LGScreenW / count;
@@ -94,11 +87,8 @@ static NSString * const ID = @"cell";
         btn.titleLabel.font = [UIFont systemFontOfSize:15];
         [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor redColor] forState:UIControlStateSelected];
-        
         [btn addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
-        
         [self.btns addObject:btn];
-        
         if (i == 0) {
             //添加下划线
             UIView *underLine = [[UIView alloc] init];
@@ -106,19 +96,16 @@ static NSString * const ID = @"cell";
             [_topScrollView addSubview:underLine];
             _underLine = underLine;
             [btn.titleLabel sizeToFit];
-            
             underLine.xmg_width = btn.titleLabel.xmg_width;
             underLine.xmg_height = 2;
             underLine.xmg_centerX = btn.xmg_centerX;
             underLine.xmg_y = _topScrollView.xmg_height - underLine.xmg_height;
-            
             [self titleClick:btn];
         }
     }
 }
 
-- (void)setupButtonContainerView
-{
+- (void)setupButtonContainerView {
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     layout.itemSize = [UIScreen mainScreen].bounds.size;
     layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
@@ -132,15 +119,13 @@ static NSString * const ID = @"cell";
     [collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:ID];
     [self.view addSubview:collectionView];
     _bottomCollectionView = collectionView;
-    
     collectionView.showsVerticalScrollIndicator = NO;
     collectionView.showsHorizontalScrollIndicator = NO;
     collectionView.bounces = NO;
     collectionView.pagingEnabled = YES;
 }
 
-- (void)setupTopTitleView
-{
+- (void)setupTopTitleView {
     //UIScrollView
     CGFloat y = self.navigationController.navigationBarHidden == YES?30:88;
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, y, LGScreenW, 35)];
@@ -150,14 +135,12 @@ static NSString * const ID = @"cell";
 }
 
 #pragma mark UICollectionViewDataSource
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-{
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.childViewControllers.count;
 }
 
 //每次只要有新的cell出现就会调用
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
     //移除之前子控制器的View
     [cell.contentView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
@@ -173,8 +156,7 @@ static NSString * const ID = @"cell";
 
 #pragma mark -UICollectionViewDeledate
 //滚动完成的时候调用
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
-{
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     NSInteger page = scrollView.contentOffset.x / LGScreenW;
     UIButton *btn = self.btns[page];
     [self selButton:btn];

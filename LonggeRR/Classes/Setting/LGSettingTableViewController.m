@@ -25,39 +25,31 @@ static NSString * const ID = @"cell";
     [super viewDidLoad];
     
     [SVProgressHUD showWithStatus:@"正在计算缓存尺寸"];
-    
     [LGFileManager directorySizeString:CachePath completion:^(NSString *str) {
         [SVProgressHUD dismiss];
         self.str = str;
         [self.tableView reloadData];
     }];
-    
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:ID];
 }
 
 #pragma mark - Table view data source
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 1;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    
     cell.textLabel.text = _str;
-    
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     //清除缓存
     [LGFileManager removeDirectoryPath:CachePath];
-    
     _str = @"清除缓存";
-    
     //刷新表格
     [self.tableView reloadData];
 }
+
 @end

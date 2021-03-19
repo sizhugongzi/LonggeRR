@@ -19,8 +19,7 @@
 
 @implementation LGSquareCollectionViewCell
 
-- (void)setItem:(LGSquareItem *)item
-{
+- (void)setItem:(LGSquareItem *)item {
     _item = item;
     
     [_iconView sd_setImageWithURL:[NSURL URLWithString:item.icon]];

@@ -33,9 +33,7 @@
 //保存按钮
 - (IBAction)save:(id)sender {
     //保存到自己的相册
-    
     PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
-    
     if (status == PHAuthorizationStatusNotDetermined) {//不确定
         [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
             //授权完成就会调用
@@ -61,7 +59,6 @@
         //拒绝～～～提示用户去打开授权
         [SVProgressHUD showInfoWithStatus:@"进入设置界面->找到当前应用->打开允许访问相册开关"];
     }
-    
 }
 
 - (void)viewDidLoad {
@@ -91,8 +88,7 @@
 #pragma mark - UIScrollViewDelegate
 //功能：返回需要缩放控件
 //什么时候调用：进行缩放的时候才调用
-- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
-{
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
     return _imageView;
 }
 

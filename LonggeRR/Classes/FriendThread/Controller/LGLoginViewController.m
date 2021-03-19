@@ -24,7 +24,6 @@
 
 - (IBAction)clickRegister:(UIButton *)sender {
     sender.selected = !sender.selected;
-    
     //移动中间View
     _leadingCons.constant = _leadingCons.constant == 0? -LGScreenW:0;
     [UIView animateWithDuration:0.25 animations:^{
@@ -43,23 +42,18 @@
      */
     //创建登录View
     LGLoginRegisterView *loginView = [LGLoginRegisterView loginView];
-    
     [_middleView addSubview:loginView];
-    
     //创建注册View
     LGLoginRegisterView *registerView = [LGLoginRegisterView registerView];
-    
     [_middleView addSubview:registerView];
 }
 
 //计算好所有子控件的位置完成的时候调用
 //执行完约束
-- (void)viewDidLayoutSubviews
-{
+- (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     
     _middleView.subviews[0].frame = CGRectMake(0, 0, _middleView.xmg_width * 0.5, _middleView.xmg_height);
-    
     _middleView.subviews[1].frame = CGRectMake(_middleView.xmg_width * 0.5, 0, _middleView.xmg_width * 0.5, _middleView.xmg_height);
 }
 

@@ -10,8 +10,7 @@
 
 @implementation UIColor (Custom)
 
-+ (UIColor *)customColor
-{
++ (UIColor *)customColor {
     return [UIColor colorWithRed:245/256.0 green:245/256.0 blue:245/256.0 alpha:1];
 }
 

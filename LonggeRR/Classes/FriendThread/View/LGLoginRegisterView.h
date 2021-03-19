@@ -12,8 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LGLoginRegisterView : UIView
 
-+(instancetype)loginView;
-+(instancetype)registerView;
++ (instancetype)loginView;
++ (instancetype)registerView;
 
 @end
 

@@ -29,8 +29,7 @@ static NSString *const ID = @"cell";
 
 @implementation LGMeTableViewController
 
--(void)setupFootView
-{
+- (void)setupFootView {
     //创建布局
     UICollectionViewLayout *flowLayout = ({
         UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
@@ -55,8 +54,7 @@ static NSString *const ID = @"cell";
 }
 
 #pragma mark UICollectionViewDelegate
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     LGSquareItem *item = self.squareList[indexPath.row];
     NSURL *url = [NSURL URLWithString:item.url];
     SFSafariViewController *safariVc = [[SFSafariViewController alloc] initWithURL:url];
@@ -64,13 +62,11 @@ static NSString *const ID = @"cell";
 }
 
 #pragma mark - UICollectionViewDataSource
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
-{
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.squareList.count;
 }
 
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     LGSquareCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
     cell.item = _squareList[indexPath.row];
     cell.backgroundColor = [UIColor whiteColor];
@@ -92,14 +88,11 @@ static NSString *const ID = @"cell";
     self.tableView.contentInset = UIEdgeInsetsMake(-25, 0, 0, 0);
 }
 
-- (void)loadData
-{
+- (void)loadData {
     AFHTTPSessionManager *mgr = [AFHTTPSessionManager xl_manger];
-    
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     parameters[@"a"] = @"square";
     parameters[@"c"] = @"topic";
-    
     [mgr GET:LGBaseUrl parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary *  _Nullable responseObject) {
         //字典数组转模型数组
         self.squareList = [LGSquareItem mj_objectArrayWithKeyValuesArray:responseObject[@"square_list"]];
@@ -118,8 +111,7 @@ static NSString *const ID = @"cell";
 }
 
 //补齐缺口
-- (void)resloveData
-{
+- (void)resloveData {
     NSInteger count = self.squareList.count;
     NSInteger extre = count % cols;
     if (extre) {
@@ -131,28 +123,23 @@ static NSString *const ID = @"cell";
     }
 }
 
-- (void)setupNavigationBar
-{
+- (void)setupNavigationBar {
     //设置导航条内容
     self.navigationItem.title = @"我的";
     //右边
     UIBarButtonItem *nightModeItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"mine-moon-icon"] imageSelected:[UIImage imageNamed:@"mine-sun-icon-click"] target:self action:@selector(nightModeClick:)];
     UIBarButtonItem *settingItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"mine-setting-icon"] highImage:[UIImage imageNamed:@"mine-setting-icon-click"] target:self action:@selector(settingClick)];
     self.navigationItem.rightBarButtonItems = @[settingItem,nightModeItem];
-    
 }
 
-- (void)nightModeClick:(UIButton *)btn
-{
+- (void)nightModeClick:(UIButton *)btn {
     btn.selected = !btn.selected;
 }
 
-- (void)settingClick
-{
+- (void)settingClick {
     LGSettingTableViewController *settingTableViewController = [[LGSettingTableViewController alloc] init];
     settingTableViewController.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:settingTableViewController animated:YES];
 }
-
 
 @end

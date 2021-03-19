@@ -10,8 +10,7 @@
 
 @implementation UIImage (Render)
 
-+ (UIImage *)imageNamedWithOriginal:(NSString *)name
-{
++ (UIImage *)imageNamedWithOriginal:(NSString *)name {
     UIImage *selImage = [UIImage imageNamed:name];
     [selImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     return selImage;

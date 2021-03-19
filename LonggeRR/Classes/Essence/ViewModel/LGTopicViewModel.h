@@ -14,7 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface LGTopicViewModel : UIView
 
 @property (nonatomic,copy) LGTopicItem *topicItem;
-
 @property (nonatomic,assign) CGRect topViewFrame;
 @property (nonatomic,assign) CGRect middleViewFrame;
 @property (nonatomic,assign) CGRect commentViewFrame;

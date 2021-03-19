@@ -20,14 +20,11 @@
 
 @implementation LGUserTableViewCell
 
-- (void)setUser:(LGUserModel *)user
-{
+- (void)setUser:(LGUserModel *)user {
     _user = user;
     
     [self.iconView sd_setImageWithURL:[NSURL URLWithString:user.header] placeholderImage:[UIImage imageNamed:@"mainCellBackground"]];
-    
     self.nameView.text = user.screen_name;
-    
     CGFloat num = [user.fans_count floatValue];
     NSString *numStr = [NSString stringWithFormat:@"%@人关注",user.fans_count];
     if (num > 10000) {

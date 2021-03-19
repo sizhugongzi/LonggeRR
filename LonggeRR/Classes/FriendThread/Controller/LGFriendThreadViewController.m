@@ -22,9 +22,7 @@
 
 //点击了登录按钮
 - (IBAction)clickLogin:(id)sender {
-    
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"LGLoginViewController" bundle:nil];
-    
     //加载箭头指向控制器
     LGLoginViewController *loginViewController = [storyboard instantiateInitialViewController];
     [self presentViewController:loginViewController animated:YES completion:nil];
@@ -36,15 +34,15 @@
     //设置导航条内容
     [self setupNavigationBar];
 }
--(void)setupNavigationBar
-{
+
+- (void)setupNavigationBar {
     //设置导航条内容
     self.navigationItem.title = @"我的关注";
     //右边
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"friendsRecommentIcon"] highImage:[UIImage imageNamed:@"friendsRecommentIcon-click"] target:self action:@selector(recomondClick)];
 }
--(void)recomondClick
-{
+
+- (void)recomondClick {
     LGRecommendViewController *recommendViewController = [[LGRecommendViewController alloc] init];
     [self.navigationController pushViewController:recommendViewController animated:YES];
 }

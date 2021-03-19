@@ -15,8 +15,7 @@
 
 @implementation LGNavigationController
 
-+ (void)load
-{
++ (void)load {
     //统一设置导航条
     UINavigationBar *bar = [UINavigationBar appearanceWhenContainedIn:self,nil];
     NSDictionary *dict = @{
@@ -39,8 +38,7 @@
     [self.view addGestureRecognizer:pan];
 }
 
-- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
-{
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     //设置导航条返回按钮
     if (self.childViewControllers.count > 0) {
         LGBackView *backView = [LGBackView backViewWithImage:[UIImage imageNamed:@"navigationButtonReturn"] highImage:[UIImage imageNamed:@"navigationButtonReturnClick"] target:self action:@selector(back) title:@"返回"];
@@ -50,15 +48,13 @@
     [super pushViewController:viewController animated:animated];
 }
 
-- (void)back
-{
+- (void)back {
     [self popViewControllerAnimated:YES];
 }
 
 #pragma mark - UIGestureRecognizerDelegate
 //用来控制手势是否触发
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
-{
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
     return self.childViewControllers.count > 1;
 }
 

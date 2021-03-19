@@ -20,17 +20,13 @@
 
 @implementation LGVoiceTopicView
 
-- (void)setTopicItem:(LGTopicItem *)topicItem
-{
+- (void)setTopicItem:(LGTopicItem *)topicItem {
     [super setTopicItem: topicItem];
     
     [_pictureView sd_setImageWithURL:[NSURL URLWithString:topicItem.image0]];
-    
     _playCountView.text = [NSString stringWithFormat:@"%@播放",topicItem.playcount];
-    
     NSInteger second = topicItem.voicetime % 60;
     NSInteger minute = topicItem.voicetime / 60;
-    
     _timeView.text = [NSString stringWithFormat:@"%02ld:%02ld",minute,second];
 }
 

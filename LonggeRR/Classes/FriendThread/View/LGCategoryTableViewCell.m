@@ -18,8 +18,7 @@
 
 @implementation LGCategoryTableViewCell
 
-- (void)setCategory:(LGCategoryItem *)category
-{
+- (void)setCategory:(LGCategoryItem *)category {
     _category = category;
     
     self.nameView.text = category.name;
@@ -35,7 +34,6 @@
     [super setSelected:selected animated:animated];
 
     self.indicatorView.hidden = !selected;
-    
     self.nameView.textColor = selected?[UIColor redColor]:[UIColor blackColor];
 }
 

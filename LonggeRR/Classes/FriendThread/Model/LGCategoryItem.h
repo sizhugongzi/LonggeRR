@@ -14,7 +14,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,copy) NSString *name;
 @property (nonatomic,assign) NSInteger id;
-
 //保存当前分类的用户组
 @property (nonatomic,strong) NSMutableArray *users;
 @property (nonatomic,assign) NSInteger page;

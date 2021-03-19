@@ -26,8 +26,7 @@
 @implementation LGTabBarController
 
 //懒加载
-- (UIButton *)plusButton
-{
+- (UIButton *)plusButton {
     if (!_plusButton) {
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         _plusButton = button;
@@ -40,8 +39,7 @@
 }
 
 //第一次使用当前类或者子类的时候也会调用 ⚠️可能会调用多次
-+ (void)initialize
-{
++ (void)initialize {
     if (self == [LGTabBarController class]) {
         UITabBarItem *item = [UITabBarItem appearance];
         NSDictionary *dict = @{
@@ -56,23 +54,18 @@
     [super viewDidLoad];
     
     self.delegate = self;
-    
     //设置➕按钮位置
     self.plusButton.center = CGPointMake(self.tabBar.frame.size.width * 0.5, self.tabBar.frame.size.height * 0.5);
-   
     //添加所有的子控制器
     [self addAllChildViewControllers];
     //设置UITabBarItem
     [self setupAllTitleTarBarItems];
-    
     [self plusButtonClick];
-    
     self.selectViewController = self.childViewControllers[0];
 }
 
 #pragma mark --- UITabBarControllerDelegate
-- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
-{
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
     //是否重复点击
     if (self.selectViewController == viewController) {
         //刷新当前控制器
@@ -81,19 +74,16 @@
     self.selectViewController = viewController;
 }
 
-- (void)plusButtonClick
-{
+- (void)plusButtonClick {
     [self.plusButton addTarget:self action:@selector(run) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void)run
-{
+- (void)run {
     LGPublishViewController *publishViewController = [[LGPublishViewController alloc] init];
     [self presentViewController:publishViewController animated:YES completion:nil];
 }
 
-- (void)addAllChildViewControllers
-{
+- (void)addAllChildViewControllers {
     //精华
     LGEssenceViewController *essenceViewController = [[LGEssenceViewController alloc] init];
     LGNavigationController *essenceNavigationController = [[LGNavigationController alloc] initWithRootViewController:essenceViewController];
@@ -118,8 +108,7 @@
     [self addChildViewController:meNavigationController];
 }
 
-- (void)setupAllTitleTarBarItems
-{
+- (void)setupAllTitleTarBarItems {
     //精华
     LGEssenceViewController *essenceViewController = self.childViewControllers[0];
     essenceViewController.tabBarItem.title = @"精华";

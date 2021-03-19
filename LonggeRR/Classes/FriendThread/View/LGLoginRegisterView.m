@@ -17,19 +17,16 @@
 
 @implementation LGLoginRegisterView
 
-+(instancetype)loginView
-{
++ (instancetype)loginView {
     return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] firstObject];
 }
 
-+(instancetype)registerView
-{
++ (instancetype)registerView {
     return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] lastObject];
 }
 
 //加载xib完成的时候调用，把xib里面的所有的属性赋值
--(void)awakeFromNib
-{
+- (void)awakeFromNib {
     [super awakeFromNib];
     
     UIImage *image = self.loginButton.currentBackgroundImage;

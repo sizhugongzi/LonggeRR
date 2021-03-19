@@ -10,8 +10,7 @@
 
 @implementation LGFastLoginButton
 
-- (void)layoutSubviews
-{
+- (void)layoutSubviews {
     [super layoutSubviews];
     
     //设置图片

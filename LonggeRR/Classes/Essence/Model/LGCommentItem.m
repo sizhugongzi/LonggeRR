@@ -11,8 +11,7 @@
 
 @implementation LGCommentItem
 
--(NSString *) totalContent
-{
+-(NSString *) totalContent {
     return [NSString stringWithFormat:@"%@:%@",self.userItem.username,self.content];
 }
 

@@ -27,8 +27,7 @@
     [self setupAllChildViewController];
 }
 
--(void)setupAllChildViewController
-{
+- (void)setupAllChildViewController {
     //全部
     LGBaseTopicTableViewController *allTableVC = [[LGBaseTopicTableViewController alloc] init];
     allTableVC.title = @"全部";
@@ -56,16 +55,16 @@
     [self addChildViewController:textTableVC];
 }
 
-- (void)setupNavigationBar
-{
+- (void)setupNavigationBar {
     //设置导航条内容
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
     //右边
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"MainTagSubIcon"] highImage:[UIImage imageNamed:@"MainTagSubIconClick"] target:self action:@selector(subClick)];
 }
-- (void)subClick
-{
+
+- (void)subClick {
     LGSubTagTableViewController *subTagTableViewController = [[LGSubTagTableViewController alloc] init];
     [self.navigationController pushViewController:subTagTableViewController animated:YES];
 }
+
 @end

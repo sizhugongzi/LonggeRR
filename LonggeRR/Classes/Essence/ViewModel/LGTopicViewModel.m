@@ -12,10 +12,8 @@
 
 @implementation LGTopicViewModel
 
-- (void)setTopicItem:(LGTopicItem *)topicItem
-{
+- (void)setTopicItem:(LGTopicItem *)topicItem {
     _topicItem = topicItem;
-    
     //计算cell高度
     CGFloat topX = 0;
     CGFloat topY = 0;
@@ -25,11 +23,8 @@
     CGFloat textW = LGScreenW - 2 * margin;
     CGFloat textH = [topicItem.text sizeWithFont:[UIFont systemFontOfSize:17] constrainedToSize:CGSizeMake(textW, MAXFLOAT)].height;
     CGFloat topH = textY + textH;
-    
     _topViewFrame = CGRectMake(topX, topY, topW, topH);
-    
     _cellH = CGRectGetMaxY(_topViewFrame) + margin;
-    
     //计算中间View
     if (topicItem.type != LGTopicItemTypeText) {
         CGFloat middleX = margin;
@@ -43,7 +38,6 @@
         _middleViewFrame = CGRectMake(middleX, middleY, middleW, middleH);
         _cellH = CGRectGetMaxY(_middleViewFrame) + margin;
     }
-    
     //最热评论View
     if (topicItem.topComment) {
         CGFloat commentX = 0;

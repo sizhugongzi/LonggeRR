@@ -12,11 +12,9 @@
 @implementation LGPhotoManager
 
 #pragma mark --- 获取之前相册
-+ (PHAssetCollection *)fetchAssetCollection:(NSString *)albumTitle
-{
++ (PHAssetCollection *)fetchAssetCollection:(NSString *)albumTitle {
     //获取之前相册
     PHFetchResult *result = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeAlbum subtype:PHAssetCollectionSubtypeAlbumRegular options:nil];
-    
     for (PHAssetCollection *assetCollection in result) {
         if ([assetCollection.localizedTitle isEqualToString:albumTitle]) {
             return assetCollection;
@@ -26,8 +24,7 @@
 }
 
 + (void)savePhoto:(UIImage *)image albumTitle:(NSString *)albumTitle
-completionHandler:(void(^)(BOOL success, NSError * error))completionHandler
-{
+completionHandler:(void(^)(BOOL success, NSError * error))completionHandler {
     [[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
         //判断之前有没有相册，获取之前相册
         PHAssetCollection *assetCollection = [self fetchAssetCollection:albumTitle];
@@ -45,12 +42,10 @@ completionHandler:(void(^)(BOOL success, NSError * error))completionHandler
         PHObjectPlaceholder *placeholder = [assetChangeRequest placeholderForCreatedAsset];
         [assetCollectionChangeRequest addAssets:@[placeholder]];
     } completionHandler:^(BOOL success, NSError * error) {
-        
         if (completionHandler) {
             completionHandler(success,error);
         }
     }];
 }
-
 
 @end

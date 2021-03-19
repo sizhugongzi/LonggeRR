@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface LGSubTagTableViewCell : UITableViewCell
 
 @property (nonatomic,strong) LGSubTagItem *item;
-+(instancetype)cell;
++ (instancetype)cell;
 
 @end
 

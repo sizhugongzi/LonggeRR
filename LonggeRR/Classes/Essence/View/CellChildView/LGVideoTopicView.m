@@ -20,17 +20,13 @@
 
 @implementation LGVideoTopicView
 
-- (void)setTopicItem:(LGTopicItem *)topicItem
-{
+- (void)setTopicItem:(LGTopicItem *)topicItem {
     [super setTopicItem: topicItem];
     
     [_pictureView sd_setImageWithURL:[NSURL URLWithString:topicItem.image0]];
-    
     _playCountView.text = [NSString stringWithFormat:@"%@播放",topicItem.playcount];
-    
     NSInteger second = topicItem.videotime % 60;
     NSInteger minute = topicItem.videotime / 60;
-    
     _timeView.text = [NSString stringWithFormat:@"%02ld:%02ld",minute,second];
 }
 

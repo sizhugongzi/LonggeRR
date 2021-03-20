@@ -21,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor whiteColor];
     //设置导航条内容
     [self setupNavigationBar];
     //添加所有的子控制器
